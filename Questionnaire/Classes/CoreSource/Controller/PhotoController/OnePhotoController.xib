@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="stkaiti.ttf">
+            <string>STKaiti</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnePhotoController">
+            <connections>
+                <outlet property="naviHeight" destination="BNy-Ts-V6a" id="N2B-Fb-U43"/>
+                <outlet property="naviTitleItem" destination="28f-d7-PDo" id="FRr-dY-yGf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhm-MI-2Sc">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioH-B0-YkN">
+                            <rect key="frame" x="15" y="20" width="50" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="MUx-HS-21i"/>
+                                <constraint firstAttribute="height" constant="40" id="yLC-qt-6Ka"/>
+                            </constraints>
+                            <state key="normal" image="tab_back.png"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="LEs-2G-9Sg"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="相机胶卷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="28f-d7-PDo">
+                            <rect key="frame" x="153.5" y="20" width="68" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="qxW-Ah-vCh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="STKaiti" family="STKaiti" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="28f-d7-PDo" firstAttribute="centerX" secondItem="Lhm-MI-2Sc" secondAttribute="centerX" id="2cY-wn-9Kg"/>
+                        <constraint firstAttribute="height" constant="64" id="BNy-Ts-V6a"/>
+                        <constraint firstItem="ioH-B0-YkN" firstAttribute="leading" secondItem="Lhm-MI-2Sc" secondAttribute="leading" constant="15" id="W8s-k6-0UA"/>
+                        <constraint firstAttribute="bottom" secondItem="ioH-B0-YkN" secondAttribute="bottom" constant="4" id="p2X-RQ-2zZ"/>
+                        <constraint firstAttribute="bottom" secondItem="28f-d7-PDo" secondAttribute="bottom" constant="4" id="tKq-f7-MUF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Lhm-MI-2Sc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6G9-wX-e54"/>
+                <constraint firstItem="Lhm-MI-2Sc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fbk-xO-Ogn"/>
+                <constraint firstAttribute="trailing" secondItem="Lhm-MI-2Sc" secondAttribute="trailing" id="exj-FN-AQo"/>
+            </constraints>
+            <point key="canvasLocation" x="23.5" y="132.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tab_back.png" width="25" height="25"/>
+    </resources>
+</document>

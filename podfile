@@ -1,0 +1,14 @@
+platform :ios, '8.0'
+
+use_frameworks!
+
+def pods
+	pod 'JPush'
+	pod 'AVOSCloud'
+	pod 'UMCAnalytics'
+	pod 'SDWebImage'
+        pod 'MJRefresh'
+end
+target 'Questionnaire' do
+    pods
+end

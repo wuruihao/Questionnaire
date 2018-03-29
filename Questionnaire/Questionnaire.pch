@@ -1,0 +1,77 @@
+//
+//  Questionnaire.pch
+//  Questionnaire
+//
+//  Created by Robert on 2018/3/15.
+//  Copyright © 2018年 wuruihao. All rights reserved.
+//
+
+#ifndef Questionnaire_pch
+#define Questionnaire_pch
+
+#define kWeakSelf __weak __typeof(self) weakSelf = self;
+//内容页高度
+#define kContentHeight (iPhoneX ? kScreenHeight - kContentY - 34 : kScreenHeight - kContentY)
+//内容页y
+#define kContentY (iPhoneX ? 88 : 64)
+
+#import <AVOSCloud/AVOSCloud.h>
+
+#import <UMCommon/UMCommon.h>           // 公共组件是所有友盟产品的基础组件，必选
+#import <UMAnalytics/MobClick.h>        // 统计组件
+
+#import <JPUSHService.h>
+// iOS10注册APNs所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+#import <UserNotifications/UserNotifications.h>
+#endif
+
+#define JPushAppKey @"7a660e5dfdd19590b41e1aac"
+#define UMengAppKey @"5ab1c410f43e4862500000a7"
+#define LeanCloundAppID @"cOIE21hN74IYt1jYknaH64k3-gzGzoHsz"
+#define LeanCloundAppKey @"iQApIFFimVz5FIpcepaLYacY"
+#define LeanCloundObjectID @"AW6L64tp0BRCDmRdvh7N6Ec0"
+
+#define LaunchScreenID @"5aaf5ab19f5454250d98e9c2"
+
+#define APPID @"1361883494"
+
+#define BidID @"pai.wen.juan"
+
+#import <UMAnalytics/MobClick.h>
+
+#import "CoreHeader.h"
+
+#import "UserAnswerData.h"
+#import "AnswerData.h"
+#import "AnswerListData.h"
+#import "HomeData.h"
+#import "StatisticalData.h"
+
+#import "OptionsView.h"
+#import "AlertTextView.h"
+#import "AgreeDealView.h"
+#import "AnswerTitleView.h"
+
+#import "HomeCell.h"
+#import "StatisticalCell.h"
+#import "AnswerOptionsCell.h"
+#import "QuestionManager.h"
+#import "EditAnswerController.h"
+#import "EditQuestioController.h"
+#import "MyQuestionController.h"
+#import "MyFeedbackController.h"
+#import "QuestionnaireController.h"
+#import "StatisticalController.h"
+#import "SurveyController.h"
+#import "RegisterController.h"
+#import "MyInfoController.h"
+#import "MoreController.h"
+#import "LoginController.h"
+#import "AboutUsController.h"
+#import "ChangeNameController.h"
+#import "MemberController.h"
+
+#import "RootController.h"
+
+#endif 

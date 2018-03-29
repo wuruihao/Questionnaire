@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="stkaiti.ttf">
+            <string>STKaiti</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditQuestioController">
+            <connections>
+                <outlet property="iconButton" destination="Iwg-Cg-lTn" id="8cQ-X9-Noc"/>
+                <outlet property="inputTextFied" destination="O1G-Yf-DAi" id="zWh-9U-Sbx"/>
+                <outlet property="selecteDate" destination="dd1-pg-wdt" id="g0X-VN-iFH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-2Z-S25">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWQ-ti-MxS">
+                            <rect key="frame" x="15" y="20" width="50" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="fBP-6E-NZY"/>
+                                <constraint firstAttribute="width" constant="50" id="fjt-7O-tHj"/>
+                            </constraints>
+                            <state key="normal" image="tab_back.png"/>
+                            <connections>
+                                <action selector="backAction:" destination="-1" eventType="touchUpInside" id="X8W-gx-he4"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建问卷信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5p-gc-Sea">
+                            <rect key="frame" x="137" y="31" width="102" height="22.5"/>
+                            <fontDescription key="fontDescription" name="STKaiti" family="STKaiti" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkY-Th-jan">
+                            <rect key="frame" x="310" y="20" width="50" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="9XI-E9-dwT"/>
+                                <constraint firstAttribute="width" constant="50" id="S3n-kD-psJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="STKaiti" family="STKaiti" pointSize="15"/>
+                            <state key="normal" title="继续"/>
+                            <connections>
+                                <action selector="nextQuestionnaire:" destination="-1" eventType="touchUpInside" id="y8b-Jt-kDx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="gWQ-ti-MxS" firstAttribute="centerY" secondItem="Sz5-2Z-S25" secondAttribute="centerY" constant="10" id="1o4-1O-1d4"/>
+                        <constraint firstAttribute="trailing" secondItem="hkY-Th-jan" secondAttribute="trailing" constant="15" id="5hh-Iy-8Y9"/>
+                        <constraint firstAttribute="height" constant="64" id="O5P-e7-ZCd"/>
+                        <constraint firstItem="hkY-Th-jan" firstAttribute="bottom" secondItem="gWQ-ti-MxS" secondAttribute="bottom" id="Xa3-N9-3Kq"/>
+                        <constraint firstItem="gWQ-ti-MxS" firstAttribute="leading" secondItem="Sz5-2Z-S25" secondAttribute="leading" constant="15" id="Xt4-GI-AZd"/>
+                        <constraint firstItem="z5p-gc-Sea" firstAttribute="centerY" secondItem="Sz5-2Z-S25" secondAttribute="centerY" constant="10" id="jgO-2H-leH"/>
+                        <constraint firstItem="z5p-gc-Sea" firstAttribute="centerX" secondItem="Sz5-2Z-S25" secondAttribute="centerX" id="txC-rB-45c"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kQ-UB-ptZ">
+                    <rect key="frame" x="0.0" y="64" width="375" height="333.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iwg-Cg-lTn">
+                            <rect key="frame" x="20" y="20" width="83.5" height="83.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Iwg-Cg-lTn" secondAttribute="height" multiplier="1:1" id="tRo-nH-5zU"/>
+                            </constraints>
+                            <state key="normal" image="home_add.png"/>
+                            <connections>
+                                <action selector="clickImage:" destination="-1" eventType="touchUpInside" id="vjX-Qv-QEP"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="问卷标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dow-xS-hgv">
+                            <rect key="frame" x="20" y="123.5" width="68" height="22.5"/>
+                            <fontDescription key="fontDescription" name="STKaiti" family="STKaiti" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入问卷标题(不超过20字)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O1G-Yf-DAi">
+                            <rect key="frame" x="20" y="161" width="335" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="STKaiti" family="STKaiti" pointSize="16"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="kLA-Ii-hqr"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="截止时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V92-QU-MLI">
+                            <rect key="frame" x="20" y="211" width="68" height="22.5"/>
+                            <fontDescription key="fontDescription" name="STKaiti" family="STKaiti" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd1-pg-wdt">
+                            <rect key="frame" x="20" y="248.5" width="335" height="35"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="STKaiti" family="STKaiti" pointSize="17"/>
+                            <state key="normal" title="选取时间">
+                                <color key="titleColor" red="0.74901960784313726" green="0.74901960784313726" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickDate:" destination="-1" eventType="touchUpInside" id="Zpg-yw-AuI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="dd1-pg-wdt" firstAttribute="top" secondItem="V92-QU-MLI" secondAttribute="bottom" constant="15" id="3Nt-Jp-Avg"/>
+                        <constraint firstItem="V92-QU-MLI" firstAttribute="leading" secondItem="Iwg-Cg-lTn" secondAttribute="leading" id="83D-ff-KSh"/>
+                        <constraint firstAttribute="trailing" secondItem="dd1-pg-wdt" secondAttribute="trailing" constant="20" id="D2J-JS-KPP"/>
+                        <constraint firstAttribute="trailing" secondItem="O1G-Yf-DAi" secondAttribute="trailing" constant="20" id="EXg-2a-THE"/>
+                        <constraint firstItem="Dow-xS-hgv" firstAttribute="leading" secondItem="Iwg-Cg-lTn" secondAttribute="leading" id="GzE-3V-dsb"/>
+                        <constraint firstItem="Dow-xS-hgv" firstAttribute="top" secondItem="Iwg-Cg-lTn" secondAttribute="bottom" constant="20" id="K5x-WK-WAr"/>
+                        <constraint firstItem="Iwg-Cg-lTn" firstAttribute="height" secondItem="1kQ-UB-ptZ" secondAttribute="height" multiplier="1:4" id="LD8-yw-531"/>
+                        <constraint firstItem="O1G-Yf-DAi" firstAttribute="top" secondItem="Dow-xS-hgv" secondAttribute="bottom" constant="15" id="Rn6-hh-QNa"/>
+                        <constraint firstItem="dd1-pg-wdt" firstAttribute="leading" secondItem="Iwg-Cg-lTn" secondAttribute="leading" id="XD0-zN-Vqx"/>
+                        <constraint firstItem="V92-QU-MLI" firstAttribute="top" secondItem="O1G-Yf-DAi" secondAttribute="bottom" constant="20" id="bOj-UJ-17D"/>
+                        <constraint firstItem="Iwg-Cg-lTn" firstAttribute="leading" secondItem="1kQ-UB-ptZ" secondAttribute="leading" constant="20" id="eQX-DJ-68x"/>
+                        <constraint firstItem="O1G-Yf-DAi" firstAttribute="leading" secondItem="Iwg-Cg-lTn" secondAttribute="leading" id="odt-LV-0OQ"/>
+                        <constraint firstItem="Iwg-Cg-lTn" firstAttribute="top" secondItem="1kQ-UB-ptZ" secondAttribute="top" constant="20" id="yzH-sv-dvh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sz5-2Z-S25" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="10j-ou-DrM"/>
+                <constraint firstItem="Sz5-2Z-S25" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="175-mZ-NDZ"/>
+                <constraint firstItem="1kQ-UB-ptZ" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:2" id="4cj-8g-IP0"/>
+                <constraint firstAttribute="trailing" secondItem="1kQ-UB-ptZ" secondAttribute="trailing" id="B2F-kq-j5G"/>
+                <constraint firstItem="1kQ-UB-ptZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fsx-Uc-4U5"/>
+                <constraint firstItem="1kQ-UB-ptZ" firstAttribute="top" secondItem="Sz5-2Z-S25" secondAttribute="bottom" id="LPU-J1-aeA"/>
+                <constraint firstItem="Sz5-2Z-S25" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PPr-wA-Fx3"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_add.png" width="150" height="150"/>
+        <image name="tab_back.png" width="25" height="25"/>
+    </resources>
+</document>
